@@ -50,7 +50,7 @@ function createMarkup(arr) {
 
 function handleKey(e) {
   console.log(e.code);
-  if (e.code === "Escape") {
+  if (e.code === "Escape" && instance) {
     instance.close();
   }
 }
